@@ -1,0 +1,516 @@
+html, body, h1, h2, h3, h4, h5, h6, div {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fffdfa; 
+}
+h1 {
+  font-family: 'Poiret One', cursive;
+}
+h2 {
+  font-family: 'Bellota Text', cursive;
+}
+
+/*menu*/
+.menu {
+  width: 30px;
+  height: 100%;
+  position: fixed;
+  text-align: left;
+  background-color: #553831;
+}
+
+nav {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr;
+  height: 100%;
+  text-align: center;
+}
+
+.nav {
+  height: 166px;
+  width: 30px;
+  align-self: center;
+  text-align: center;
+  padding-top: 150%;
+}
+
+#navigation {
+  color: #ffffff;
+  font-family: 'Bellota Text', cursive;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-lr;
+  writing-mode: tb-lr;
+  transform: rotate(180deg);
+}
+
+/*first block*/
+.firstblock {
+  background: linear-gradient(rgba(0,0,0,0.7),
+  rgba(0,0,0,0.7)), url("https://thumb.tildacdn.com/tild3065-6334-4166-a535-653830623462/-/format/webp/prud_dom_zakat_utki_.jpg");
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 0; 
+  margin-top: 0;
+  color: white;
+  text-align: center;
+}
+.heading {
+  font-size: 60px;
+  padding-top: 300px;
+  font-weight: 400;
+}
+hr {
+  background-color: white;
+  width: 170px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+.sheading {
+  padding-top: 25px;
+  font-weight: 100;
+}
+#arrow {
+  display: block;
+  margin-left: 48%;
+  margin-right: 45%;
+  margin-top: 140px;
+  width: 70px;
+  height: 70px;
+  opacity: 30%;
+}
+
+/*second block*/
+.secblock {
+  height: 220px;
+  width: 100%;
+  text-align: center;
+}
+.name {
+  font-size: 30px;
+  margin-top: 90px;
+  font-weight: 700;
+}
+.name-two {
+  width: 600px;
+  height: 90px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  font-weight: 400;
+}
+
+/*lines*/
+#first-line {
+  height: 1.5px;
+  background-image: -webkit-linear-gradient(right, #ebbd68, rgba(235,189,104,0));
+  width: 200px;
+  display: inline-block;
+}
+#center-line {
+  height: 1.5px;
+  width: 200px;
+  display: inline-block;
+  background: #ebbd68;
+}
+#third-line {
+  background-image: -webkit-linear-gradient(left, #ebbd68, rgba(235,189,104,0));
+  height: 1.5px;
+  width: 200px;
+  display: inline-block;
+}
+.parent-line {
+  width: 100%;
+  opacity: 0.3;
+  text-align: center;
+}
+
+/*third block*/
+.thirdblock {
+  margin-top: 90px;
+  width: 100%;
+  text-align: center;
+}
+.name-three {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+  height: 120px;
+}
+
+/*test*/
+.madtest {
+  margin-top: 90px;
+  width: 100%;
+}
+
+/*poems*/ 
+.poem {
+  background-color: #ebbd68;
+  width: 100%;
+  height: 150px;
+  margin-top: 100px;
+  text-align: center;
+  display: inline-block;
+}
+.poetry {
+  font-size: 27px;
+  margin-top: 23px;
+  color: #fff;
+  font-weight: 500;
+}
+#vector {
+  margin-top: 15px;
+  width: 28px;
+  height: 35px;
+}
+
+/*gradient*/
+.gradients {
+  width: 100%;
+  height: 60px;
+}
+#fir-gradient {
+  background: linear-gradient(to bottom right, #ebbd68 50%, #fffdfa 50%);
+  height: 60px;
+  width: 50%;
+  display: inline-block;
+}
+#sec-gradient {
+  height: 60px;
+  display: inline-block;
+  width: 50%;
+  background: linear-gradient(to bottom left, #ebbd68 50%, #fffdfa 50%);
+}
+
+/*biography*/
+.p-biography {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  margin-left: 100px;
+  margin-right: 60px;
+}
+
+.high {
+  color: #553831;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.subtitle {
+  color: #553831;
+  font-size: 25px;
+  font-weight: 600;
+}
+.paragraph {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*table*/
+#chronology {
+  margin-top: 90px;
+}
+
+table {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 70px;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+td, tr {
+  border: 3px solid rgba(221, 186, 140, 0.5); 
+  border-style: dashed;
+ }
+
+td {
+  vertical-align: top;
+}
+
+.subtitle {
+  width: 130px;
+  margin: 5px;
+  text-align: center;
+}
+
+.paragraph {
+  margin: 8px;
+}
+
+/*facts*/
+.gallery {
+  margin-top: 80px;
+  display: grid;
+  grid-template: 1fr 1fr / 300px 300px 300px;
+  grid-column-gap: 5%;
+  grid-row-gap: 60px;
+  justify-content: center;
+}
+
+.photo_facts {
+  width: 300px;
+  height: 300px;
+  border-radius: 3%;
+  box-shadow: 15px 15px 10px rgba(217, 211, 200, 0.7);
+  cursor: pointer;
+}  
+
+.spoiler {
+  display: block;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  height:160px;
+  width:100px;
+  background-color: #000;        
+  transition:all .7s ease-out;
+  border: 1px solid #333;
+  border-radius: 2em;
+  z-index: 0;
+}
+
+.spoiler:active {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  width:347px;
+  height:160px;  
+  display: block;  
+  z-index: 999;      
+}  
+  
+/*citation*/
+.citation {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+  height: 600px;
+}
+
+.lines h1 {
+  color: #553831;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 600;
+  opacity: 0.2;
+}
+
+#first {
+  margin-left: 40px;
+  margin-top: 50px;
+  width: 380px;
+}
+
+#second {
+  margin-left: 620px;
+  margin-top: 20px;
+  width: 300px;
+}
+
+#third {
+  margin-left: 114px;
+  margin-top: 110px;
+  width: 380px;
+}
+
+#fourth {
+  margin-left: 114px;
+  margin-top: 110px;
+  width: 380px;
+}
+
+#fifth {
+  margin-left: 114px;
+  margin-top: 110px;
+  width: 380px;
+}
+
+/*poetry*/
+#popular-poems {
+  margin-top: 60px;
+}
+
+.all-poetry {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+}
+
+#last-poetry {
+  border-bottom: 1px solid #eee;
+}
+
+.tab {
+  position: relative;
+  width: 800px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #eee;
+}
+
+.tab h1 {
+  color: #553831;
+  text-align: left;
+  font-size: 22px;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+
+.tab-content h2 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 3550px;
+}
+
+/*icon*/
+.tab label::after {
+  margin-top: 9px;
+  color: #fff;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #ebbd68;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+.tab input[type=checkbox] + label::after {
+  content: "+";
+}
+.tab input[type=radio] + label::after {
+  content: "\25BC";
+}
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+  background-color: rgb(223, 223, 223);
+}
+.tab input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+
+/*church*/
+.church {
+  height: 1100px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),
+  rgba(0,0,0,0.7)), url("https://img5.goodfon.ru/wallpaper/nbig/1/ff/maksim-evdokimov-priroda-peizazh-osen-travy-inei-khram-bashn.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.creativity {
+  font-weight: 300;
+  color: #fffdfa;
+  font-size: 16px;
+  background-color: #553831;
+  width: 600px;
+  height: 310px;
+  line-height: 1.55;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40%;
+}
+
+/*bottom*/
+.bottom {
+  background-color: #553831;
+  width: 100%;
+  height: 190px;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr; 
+}
+#back-to-top {
+  position: center;
+  color: #fffdfa;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 90px;
+  text-align: right;
+  margin-right: 40px;
+}
+#school {
+  color: #fffdfa;
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 10px;
+  margin-top: 90px;
+  text-align: left;
+  margin-left: 40px;
+}
+#sites {
+  height: 38px;
+  margin-top: 85px;
+  display: grid;
+  grid-template: 1fr / 30px 30px 30px 30px;
+  grid-column-gap: 10px;
+  justify-content: center;
+}
+#facebook {
+  width: 30px;
+  height: 30px;
+}
+#instagram {
+  width: 30px;
+  height: 30px;
+}
+#youtube {
+  width: 30px;
+  height: 30px;
+}
+#vk {
+  width: 30px;
+  height: 30px;
+}
