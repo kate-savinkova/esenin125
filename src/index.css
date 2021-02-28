@@ -1,17 +1,25 @@
-html, body, h1, h2, h3, h4, h5, h6, div {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
   padding: 0;
   border: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #fffdfa; 
+  background-color: #fffdfa;
 }
 h1 {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
 }
 h2 {
-  font-family: 'Bellota Text', cursive;
+  font-family: "Bellota Text", cursive;
 }
 
 /*menu*/
@@ -21,6 +29,7 @@ h2 {
   position: fixed;
   text-align: left;
   background-color: #553831;
+  z-index: 1000;
 }
 
 nav {
@@ -40,7 +49,7 @@ nav {
 
 #navigation {
   color: #ffffff;
-  font-family: 'Bellota Text', cursive;
+  font-family: "Bellota Text", cursive;
   text-decoration: none;
   font-size: 15px;
   font-weight: 400;
@@ -52,13 +61,13 @@ nav {
 
 /*first block*/
 .firstblock {
-  background: linear-gradient(rgba(0,0,0,0.7),
-  rgba(0,0,0,0.7)), url("https://thumb.tildacdn.com/tild3065-6334-4166-a535-653830623462/-/format/webp/prud_dom_zakat_utki_.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://thumb.tildacdn.com/tild3065-6334-4166-a535-653830623462/-/format/webp/prud_dom_zakat_utki_.jpg");
   background-position: center;
   height: 700px;
   width: 100%;
   background-size: cover;
-  padding-top: 0; 
+  padding-top: 0;
   margin-top: 0;
   color: white;
   text-align: center;
@@ -88,6 +97,7 @@ hr {
   width: 70px;
   height: 70px;
   opacity: 30%;
+  cursor: pointer;
 }
 
 /*second block*/
@@ -96,9 +106,20 @@ hr {
   width: 100%;
   text-align: center;
 }
+
+/* .secblock::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 1px;
+  background-color: #ebbd68;
+  margin-top: 50px;
+} */
+
 .name {
   font-size: 30px;
-  margin-top: 90px;
+  padding-top: 90px;
   font-weight: 700;
 }
 .name-two {
@@ -114,7 +135,11 @@ hr {
 /*lines*/
 #first-line {
   height: 1.5px;
-  background-image: -webkit-linear-gradient(right, #ebbd68, rgba(235,189,104,0));
+  background-image: -webkit-linear-gradient(
+    right,
+    #ebbd68,
+    rgba(235, 189, 104, 0)
+  );
   width: 200px;
   display: inline-block;
 }
@@ -125,7 +150,11 @@ hr {
   background: #ebbd68;
 }
 #third-line {
-  background-image: -webkit-linear-gradient(left, #ebbd68, rgba(235,189,104,0));
+  background-image: -webkit-linear-gradient(
+    left,
+    #ebbd68,
+    rgba(235, 189, 104, 0)
+  );
   height: 1.5px;
   width: 200px;
   display: inline-block;
@@ -134,6 +163,7 @@ hr {
   width: 100%;
   opacity: 0.3;
   text-align: center;
+  padding-top: 90px;
 }
 
 /*third block*/
@@ -157,7 +187,7 @@ hr {
   width: 100%;
 }
 
-/*poems*/ 
+/*poems*/
 .poem {
   background-color: #ebbd68;
   width: 100%;
@@ -180,6 +210,7 @@ hr {
 
 /*gradient*/
 .gradients {
+  display: flex;
   width: 100%;
   height: 60px;
 }
@@ -187,11 +218,9 @@ hr {
   background: linear-gradient(to bottom right, #ebbd68 50%, #fffdfa 50%);
   height: 60px;
   width: 50%;
-  display: inline-block;
 }
 #sec-gradient {
   height: 60px;
-  display: inline-block;
   width: 50%;
   background: linear-gradient(to bottom left, #ebbd68 50%, #fffdfa 50%);
 }
@@ -234,10 +263,11 @@ table {
   border-collapse: collapse;
 }
 
-td, tr {
-  border: 3px solid rgba(221, 186, 140, 0.5); 
+td,
+tr {
+  border: 3px solid rgba(221, 186, 140, 0.5);
   border-style: dashed;
- }
+}
 
 td {
   vertical-align: top;
@@ -255,8 +285,9 @@ td {
 
 /*facts*/
 .gallery {
-  margin-top: 80px;
+  position: relative;
   display: grid;
+  margin-top: 80px;
   grid-template: 1fr 1fr / 300px 300px 300px;
   grid-column-gap: 5%;
   grid-row-gap: 60px;
@@ -269,24 +300,67 @@ td {
   border-radius: 3%;
   box-shadow: 15px 15px 10px rgba(217, 211, 200, 0.7);
   cursor: pointer;
-}  
-
-.spoiler {
-  display: block;
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  top: 100px;
-  height:160px;
-  width:100px;
-  background-color: #000;        
-  transition:all .7s ease-out;
-  border: 1px solid #333;
-  border-radius: 2em;
-  z-index: 0;
+  user-select: none;
+  transition: all 0.3s linear;
 }
 
-.spoiler:active {
+.photo_facts:hover {
+  box-shadow: 15px 15px 10px rgba(119, 119, 117, 0.7);
+}
+
+.spoiler {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.5s linear;
+}
+
+.spoiler.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.spoiler.showed {
+  visibility: visible;
+  opacity: 1;
+}
+
+.spoiler__title,
+.spoiler__info {
+  text-align: center;
+}
+
+.spoiler__title {
+  width: 70%;
+  font-size: 40px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.spoiler__info {
+  padding-top: 100px;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+.spoiler__button {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.spoiler__button:hover {
+  color: rgb(148, 148, 148);
+}
+
+/* .spoiler:active {
   position: fixed;
   margin-left: auto;
   margin-right: auto;
@@ -295,8 +369,8 @@ td {
   height:160px;  
   display: block;  
   z-index: 999;      
-}  
-  
+}   */
+
 /*citation*/
 .citation {
   margin-left: auto;
@@ -388,9 +462,9 @@ td {
 .tab-content {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height .35s;
-  -o-transition: max-height .35s;
-  transition: max-height .35s;
+  -webkit-transition: max-height 0.35s;
+  -o-transition: max-height 0.35s;
+  transition: max-height 0.35s;
 }
 
 .tab-content h2 {
@@ -421,31 +495,30 @@ td {
   height: 3em;
   line-height: 3;
   text-align: center;
-  -webkit-transition: all .35s;
-  -o-transition: all .35s;
-  transition: all .35s;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
 }
-.tab input[type=checkbox] + label::after {
+.tab input[type="checkbox"] + label::after {
   content: "+";
 }
-.tab input[type=radio] + label::after {
+.tab input[type="radio"] + label::after {
   content: "\25BC";
 }
-.tab input[type=checkbox]:checked + label::after {
+.tab input[type="checkbox"]:checked + label::after {
   transform: rotate(315deg);
   background-color: rgb(223, 223, 223);
 }
-.tab input[type=radio]:checked + label::after {
+.tab input[type="radio"]:checked + label::after {
   transform: rotateX(180deg);
 }
-
 
 /*church*/
 .church {
   height: 1100px;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.7),
-  rgba(0,0,0,0.7)), url("https://img5.goodfon.ru/wallpaper/nbig/1/ff/maksim-evdokimov-priroda-peizazh-osen-travy-inei-khram-bashn.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://img5.goodfon.ru/wallpaper/nbig/1/ff/maksim-evdokimov-priroda-peizazh-osen-travy-inei-khram-bashn.jpg");
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
@@ -470,7 +543,7 @@ td {
   width: 100%;
   height: 190px;
   display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr; 
+  grid-template: 1fr / 1fr 1fr 1fr;
 }
 #back-to-top {
   position: center;
@@ -480,6 +553,10 @@ td {
   margin-top: 90px;
   text-align: right;
   margin-right: 40px;
+  font-family: "Poiret One", cursive;
+  font-style: normal;
+  text-decoration: underline;
+  cursor: pointer;
 }
 #school {
   color: #fffdfa;

@@ -5,8 +5,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poiret+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Есенину - 125</title>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -67,7 +70,7 @@
     <div class="madtest" data-id="175a8b1f-3f1a-46d1-a691-87b9a7151cb8"></div>
 
     <div class="poem">
-        <img src="vector.png" id="vector"></img>
+        <img src="../images/vector.png" id="vector"></img>
         <h1 class="poetry">"Так мало пройдено дорог,<br>Так много сделано ошибок."</h1>
     </div>
     <div class="gradients">
@@ -225,7 +228,7 @@
         </tbody>
     </table>
     <div class="poem">
-        <img src="vector.png" id="vector"></img>
+        <img src="../images/vector.png" id="vector"></img>
         <h1 class="poetry">"Кто любил, уж тот любить не может,<br>Кто сгорел, того не подожжешь."</h1>
     </div>
     <div class="gradients">
@@ -235,34 +238,67 @@
     <div class="facts"><a name="facts"></a>
         <h1 class="high">Факты</h1>
         <div class="gallery">
-            <a href="#spoiler_1"><img class="photo_facts" src="facts1.png" id="photo_1"></a>
-            <div class="spoiler" name="spoiler_1">
-                <h1>aergjheou</h1>
+            <div>
+                <img class="photo_facts" src="../images/facts1.png" id="photo_1" data-selector="1">
+                <div class="spoiler hidden" data-spoiler="1">
+                    <h3 class="spoiler__title">Секрет единственной фотографии Есенина с односельчанами</h3>
+                    <p class="spoiler__info">Хотя он никогда не отличался высоким ростом, на снимке он смотрится выше
+                        остальных ребят. Дело в том, что с ним стояла первая красавица села и чтобы выглядеть повыше
+                        рядом с ней, Сергей что-то подставил под ноги. Не менее интересный персонаж на фото – мальчик,
+                        лицо которого мы вряд ли когда-либо увидим.</p>
+                    <i class="fas fa-times-circle spoiler__button"></i>
+                </div>
             </div>
             <div>
-                <img class="photo_facts" src="facts2.png" id="photo_2">
-
+                <img class="photo_facts" src="../images/facts2.png" id="photo_2" data-selector="2">
+                <div class="spoiler hidden" data-spoiler="2">
+                    <h3 class="spoiler__title">Как поэт раздобыл бумагу</h3>
+                    <p class="spoiler__info">1918 год в жизни поэта ознаменовался созданием московского издательства «Трудовая артель художников слова». А.С. Есенин являлся одним из организаторов данного издательства. В то время в Москве велся строжайший учет бумаги, но поэта это не остановило, ему очень хотелось издавать свои книги. Дав волю воображению, он переоделся в крестьянское одеяние, соответствующе причесал волосы и направился в Президиум Московского Совета. Далее, сняв шапку перед дежурным органом совета, он стал упрашивать его смилостивиться и ради всего святого выделить бумаги для крестьянских писателей.
+                        Ради такого важного дела бумага появилась. А.С. Есенин выпустил в свет свою первую книгу стихотворений «Радуница». Его издательство просуществовало недолго, выпустив в свет всего лишь несколько книг.</p>
+                    <i class="fas fa-times-circle spoiler__button"></i>
+                </div>
             </div>
             <div>
-
-                <img class="photo_facts" src="facts3.png" id="photo_3">
+                <img class="photo_facts" src="../images/facts3.png" id="photo_3" data-selector="3">
+                <div class="spoiler hidden" data-spoiler="3">
+                    <h3 class="spoiler__title">Поссорился с Маяковским (не единожды)</h3>
+                    <p class="spoiler__info">В 20-е годы имена обоих поэтов гремели на всю страну, поэтому нет ничего удивительного в том, что между Маяковским и Есениным разгорелась нешуточная конкуренция.
+                        Так например, Есенин говорил, что не хочет делить Россию с такими, как Маяковский, тот же отвечал: «Возьмите ее себе. Ешьте ее с хлебом». Так же Есенин относил себя к новому тогда движению «имажинистов», чьей отличительной особенностью являлось создание образов, в которых менялось традиционное значение слов. Маяковский же состоял в рядах авангардистов и футуристов, полностью перевернувших традиционное понятие стихотворной формы. Интересно, что при этом оба литератора безоговорочно признавали талант оппонента, что, впрочем, никак не мешало им едко высказываться в сторону друг друга и доводить дело чуть ли не до потасовки.</p>
+                    <i class="fas fa-times-circle spoiler__button"></i>
+                </div>
             </div>
             <div>
-
-                <img class="photo_facts" src="facts4.png" id="photo_4">
+                <img class="photo_facts" src="../images/facts4.png" id="photo_4" data-selector="4">
+                <div class="spoiler hidden" data-spoiler="4">
+                    <h3 class="spoiler__title">Пытался сорвать спектакль в Малом театре</h3>
+                    <p class="spoiler__info">К театру Есенин имел отношение весьма опосредованное, однако и там успел наделать шума. Заявившись как-то на премьеру в Малом театре в нетрезвом состоянии, поэт во время первого акта пробрался за кулисы в гримерку к одной из актрис, где в компании с другим литератором, Всеволодом Ивановым, распивал вино. Попытки юной артистки выгнать окончательно опьяневших писателей не увенчались успехом, — и администратору пришлось вызвать ненавистных Есенину милиционеров.
+                        При виде блюстителей порядка поэт бросился удирать от них по запутанным коридорам Малого, щедро раздавая тумаки каждому, кто попадался на его пути, однако в конце концов был пойман, скручен и выдворен из театра.</p>
+                    <i class="fas fa-times-circle spoiler__button"></i>
+                </div>
             </div>
             <div>
-
-                <img class="photo_facts" src="facts5.png" id="photo_5">
+                <img class="photo_facts" src="../images/facts5.png" id="photo_5" data-selector="5">
+                <div class="spoiler hidden" data-spoiler="5">
+                    <h3 class="spoiler__title">Покончил с собой (или нет)</h3>
+                    <p class="spoiler__info">Согласно официальной версии, Сергей Есенин покончил с собой, его нашли повешенным на трубе отопления в ленинградской гостинице «Англетер». Судя по документам, признаков насильственной смерти обнаружено не было, да к тому же незадолго до своей кончины поэт написал стихотворение «До свиданья, друг мой, до свиданья», использовав для этой цели собственную кровь. Сам Есенин объяснил такой поступок отсутствием чернил.
+                        У некоторых историков и литературоведов, однако, такой вариант развития событий вызывает сомнения: они предпочитают считать, что великий поэт был убит сотрудниками советских спецслужб. В пользу этой версии говорят множественные ссадины и гематомы на теле покойника (которые следственные органы предпочли не заметить), а также просьба поэта, обращенная к портье накануне кончины, никого не пускать в номер — ее исследователи зачастую трактуют как страх перед возможными убийцами.</p>
+                    <i class="fas fa-times-circle spoiler__button"></i>
+                </div>
             </div>
             <div>
-
-                <img class="photo_facts" src="facts6.png" id="photo_6">
+                <img class="photo_facts" src="../images/facts6.png" id="photo_6" data-selector="6">
+                <div class="spoiler hidden" data-spoiler="6">
+                    <h3 class="spoiler__title">Он сиротствовал при живых родителях, хотя и недолго</h3>
+                    <p class="spoiler__info">Человек, который всю жизнь описывал в своих стихах красоты российских земель, и сам родился в красивом месте – в старинном селе Константиново Рязанской области, которое славилось живописным расположением среди лесов и полей классического русского рельефа. Отец Есенина, Александр Никитич, происходил из крестьянской семьи, но к работе на земле никакой тяги не испытывал, слыл у себя на родине мечтателем и при первой же возможности подался в Москву, работать приказчиком в мясной лавке. Московский период его жизни начался вскоре после женитьбы на Татьяне Титовой. При этом Есенин-старший сам уехал в большой город, а молодую супругу оставил на попечении своих родителей. Когда их сыну, будущему поэту, исполнилось 2 года, Татьяна поссорилась с мужем и его родственниками и уехала работать в Рязань. Так и получилось, что Сергей остался почти сиротой при живых родителях.
+                        Около пяти лет его воспитывали бабушка с дедушкой по материнской линии. Мама ежемесячно присылала весточку и 3 рубля на его содержание. От отца вообще ничего слышно не было. Зато дед в 5 лет научил Сергей читать, а бабушка рассказывала множество волшебных сказок. В 1904 году юная судьба Есенина совершила очередной кульбит – родители неожиданно помирились, снова сошлись, и дальше он рос в счастливой семье.
+                        </p>
+                    <i class="fas fa-times-circle spoiler__button"></i>
+                </div>
             </div>
         </div>
     </div>
     <div class="poem">
-        <img src="vector.png" id="vector"></img>
+        <img src="../images/vector.png" id="vector"></img>
         <h1 class="poetry">"Казаться улыбчивым и простым - <br>самое высшее в мире искусство."</h1>
     </div>
     <div class="gradients">
@@ -788,20 +824,23 @@
         </a>
         <div id="sites">
             <div>
-                <a href="https://www.facebook.com/641eseninschool/" id="facebook"><img src="facebook.png" id="facebook"></a>
+                <a href="https://www.facebook.com/641eseninschool/" id="facebook"><img src="../images/social/facebook.png"
+                        id="facebook"></a>
             </div>
             <div>
-                <a href="https://vk.com/s_641" id="vk"><img src="vk.png" id="vk"></a>
+                <a href="https://vk.com/s_641" id="vk"><img src="../images/social/vk.png" id="vk"></a>
             </div>
             <div>
-                <a href="https://www.youtube.com/channel/UC5xW6pJvmOTOrcLFV_2abOg/featured" id="youtube"><img src="youtube.png" id="youtube"></a>
+                <a href="https://www.youtube.com/channel/UC5xW6pJvmOTOrcLFV_2abOg/featured" id="youtube"><img
+                        src="../images/social/youtube.png" id="youtube"></a>
             </div>
             <div>
-                <a href="https://www.instagram.com/eseninschool/" id="instagram"><img src="instargam.png" id="instagram"></a>
-            </div>
+                <a href="https://www.instagram.com/eseninschool/" id="instagram"><img src="../images/social/instargam.png"
+                        id="instagram"></a>
             </div>
         </div>
-        <h1 id="back-to-top"><a href="#top" id="back-to-top">Back to top</a></h1>
+        <i id="back-to-top">Back to top</i>
+    </div>
     </div>
 </body>
 
