@@ -107,16 +107,6 @@ hr {
   text-align: center;
 }
 
-/* .secblock::after {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-  height: 1px;
-  background-color: #ebbd68;
-  margin-top: 50px;
-} */
-
 .name {
   font-size: 30px;
   padding-top: 90px;
@@ -232,7 +222,6 @@ hr {
   margin-left: 100px;
   margin-right: 60px;
 }
-
 .high {
   color: #553831;
   font-size: 50px;
@@ -249,6 +238,13 @@ hr {
   font-size: 20px;
   font-weight: 400;
 }
+
+//biography-divs
+.childhood {
+  display: grid;
+  
+}
+
 
 /*table*/
 #chronology {
@@ -305,7 +301,7 @@ td {
 }
 
 .photo_facts:hover {
-  box-shadow: 15px 15px 10px rgba(119, 119, 117, 0.7);
+  box-shadow: 15px 15px 10px rgba(136, 131, 124, 0.7);
 }
 
 .spoiler {
@@ -314,8 +310,8 @@ td {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: all 0.5s linear;
+  background-color: #fffdfade;
+  transition: all 0.2s linear;
 }
 
 .spoiler.hidden {
@@ -338,6 +334,8 @@ td {
   font-size: 40px;
   margin: 0 auto;
   padding-top: 20px;
+  font-family: "Poiret One", cursive;
+  color: #553831;
 }
 
 .spoiler__info {
@@ -345,31 +343,23 @@ td {
   width: 70%;
   margin: 0 auto;
   font-size: 30px;
+  font-family: "Bellota Text", cursive;
+  font-size: 20px;
 }
 
 .spoiler__button {
   position: absolute;
   top: 15px;
-  right: 30px;
-  font-size: 25px;
+  right: 5%;
+  font-size: 35px;
   cursor: pointer;
   transition: all 0.2s linear;
+  color: #ebbd68;
 }
 
 .spoiler__button:hover {
   color: rgb(148, 148, 148);
 }
-
-/* .spoiler:active {
-  position: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  top: 100px;
-  width:347px;
-  height:160px;  
-  display: block;  
-  z-index: 999;      
-}   */
 
 /*citation*/
 .citation {
@@ -468,7 +458,7 @@ td {
 }
 
 .tab-content h2 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: #000;
   margin-bottom: 25px;
