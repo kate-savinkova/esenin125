@@ -216,9 +216,9 @@ hr {
 }
 
 /*biography*/
-.p-biography {
+.biography-text {
   margin-top: 60px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   margin-left: 100px;
   margin-right: 60px;
 }
@@ -239,12 +239,134 @@ hr {
   font-weight: 400;
 }
 
-//biography-divs
+/*childhood*/
 .childhood {
-  display: grid;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-bottom: 60px;
 }
 
+.portrait {
+  width: 290px;
+  height: 290px;
+  border-radius: 100%;
+  box-shadow: -40px 20px 7px 7px rgb(217 211 200 / 20%);
+}
+
+.p-childhood {
+  width: 700px;
+}
+
+.childhood .subtitle{
+  width: 270px;
+  margin-bottom: 10px;
+}
+
+/*most-of-biography*/
+.most-of-biography {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.p-biography {
+  width: 600px;
+}
+
+.biography .subtitle {
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.biography-imgs {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin-left: 25px;
+}
+
+.biography2 {
+  width: 300px;
+  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.biography3 {
+  width: 210px;
+  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
+  margin-left: 60%;
+  margin-bottom: 10px;
+}
+
+.biography4 {
+  width: 190px;
+  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+.biography5 {
+  width: 300px;
+  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
+  align-self: flex-end;
+}
+
+/*private-life*/
+.private-life {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 13%;
+  margin-right: 10%;
+  margin-bottom: 60px;
+}
+
+.love {
+  width: 400px;
+  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
+}
+
+.p-love {
+  width: 700px;
+}
+
+.private-life .subtitle {
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+/*death*/
+.death {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 60px;
+}
+
+.last-portrait {
+  width: 310px;
+  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
+  margin-left: 20px;
+}
+
+.p-death {
+  width: 700px;
+}
+
+.death .subtitle {
+  width: 320px;
+  margin-bottom: 10px;
+}
 
 /*table*/
 #chronology {
@@ -277,6 +399,9 @@ td {
 
 .paragraph {
   margin: 8px;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 400;
 }
 
 /*facts*/
