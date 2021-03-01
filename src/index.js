@@ -11,8 +11,8 @@ const showSpoiler = index => {
 
 imgs.forEach(img =>
   img.addEventListener('click', event => {
-    const target = event.target;
-    const index = target.dataset.selector;
+    const target = event.target; //ссылка на объект, который являлся инициатором события
+    const index = target.dataset.selector; //в dataset заносится атрибут, равный индексу selector, который мы указали в html
     return showSpoiler(index);
   })
 );
