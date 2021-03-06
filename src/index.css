@@ -706,3 +706,7 @@ td {
   width: 30px;
   height: 30px;
 }
+
+/*media*/
+@media screen (max-height: 630px) {
+}
