@@ -467,7 +467,6 @@ td {
   padding-top: 100px;
   width: 70%;
   margin: 0 auto;
-  font-size: 30px;
   font-family: "Bellota Text", cursive;
   font-size: 20px;
 }
@@ -484,52 +483,6 @@ td {
 
 .spoiler__button:hover {
   color: rgb(148, 148, 148);
-}
-
-/*citation*/
-.citation {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1100px;
-  height: 600px;
-}
-
-.lines h1 {
-  color: #553831;
-  font-size: 20px;
-  line-height: 1.55;
-  font-weight: 600;
-  opacity: 0.2;
-}
-
-#first {
-  margin-left: 40px;
-  margin-top: 50px;
-  width: 380px;
-}
-
-#second {
-  margin-left: 620px;
-  margin-top: 20px;
-  width: 300px;
-}
-
-#third {
-  margin-left: 114px;
-  margin-top: 110px;
-  width: 380px;
-}
-
-#fourth {
-  margin-left: 114px;
-  margin-top: 110px;
-  width: 380px;
-}
-
-#fifth {
-  margin-left: 114px;
-  margin-top: 110px;
-  width: 380px;
 }
 
 /*poetry*/
@@ -617,15 +570,9 @@ td {
 .tab input[type="checkbox"] + label::after {
   content: "+";
 }
-.tab input[type="radio"] + label::after {
-  content: "\25BC";
-}
 .tab input[type="checkbox"]:checked + label::after {
   transform: rotate(315deg);
   background-color: rgb(223, 223, 223);
-}
-.tab input[type="radio"]:checked + label::after {
-  transform: rotateX(180deg);
 }
 
 /*church*/
@@ -708,5 +655,138 @@ td {
 }
 
 /*media*/
-@media screen (max-height: 630px) {
+/*laptop L*/
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+  .childhood {
+    margin-left: 11%;
+    margin-right: 6%;
+  }
+  .most-of-biography {
+    margin-left: 8%;
+    margin-right: 6%;
+  }
+  .biography-imgs {
+    width: 600px;
+    margin-left: 25px;
+  }
+  .biography .subtitle {
+    margin-left: 8px;
+  }
+  .private-life {
+    margin-left: 11%;
+    margin-right: 8%;
+  }
+  .p-love {
+    padding-left: 70px;
+  }
+  .private-life .subtitle {
+    margin-left: 8px;
+  }
+  .death {
+    margin-left: 7%;
+    margin-right: 6%;
+  }
+  .p-death {
+    width: 700px;
+  }
+  .death .subtitle {
+    margin-left: 8px;
+  }
+}
+/*laptop*/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  /*biography*/
+  .childhood {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .portrait {
+    width: 250px;
+    height: 250px;
+    box-shadow: -25px 10px 7px 7px rgb(217 211 200 / 20%);
+  }
+  .p-childhood {
+    padding-left: 40px;
+  }
+  .childhood .subtitle{
+    margin-left: 8px;
+  }
+  .most-of-biography {
+    margin-left: 4%;
+    margin-right: 10%;
+  }
+  .biography-imgs {
+    width: 300px;
+    margin-left: 25px;
+  }
+  .biography .subtitle {
+    margin-left: 8px;
+  }
+  .biography2 {
+    width: 260px;
+    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
+    margin-bottom: 50px;
+  }
+  .biography3 {
+    width: 170px;
+    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
+    margin-bottom: 50px;
+  }
+  .biography4 {
+    width: 160px;
+    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
+    margin-bottom: 50px;
+  }
+  .biography5 {
+    width: 260px;
+    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
+  }
+  .private-life {
+    margin-left: 7%;
+    margin-right: 8%;
+  }
+  .love {
+    width: 350px;
+    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
+  }
+  .p-love {
+    padding-left: 50px;
+  }
+  .private-life .subtitle {
+    margin-left: 8px;
+  }
+  .death {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .last-portrait {
+    width: 260px;
+    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
+  }
+  .p-death {
+    width: 700px;
+  }
+  .death .subtitle {
+    margin-left: 8px;
+  }
+  /*table*/
+  table {
+  margin-left: 6%;
+  margin-right: 5%;
+  }
+  /*facts*/
+  .gallery {
+    grid-template: 1fr 1fr / 250px 250px 250px;
+  }
+  .photo_facts {
+    width: 250px;
+    height: 250px;
+  }
+  .spoiler__info {
+    padding-top: 100px;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Bellota Text", cursive;
+  }
 }
