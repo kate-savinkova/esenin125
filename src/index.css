@@ -104,10 +104,83 @@ hr {
 }
 
 /*second block*/
+/*squares*/
+.square1 {
+  width: 108px;
+  height: 108px;
+  position: absolute;
+  top: 80px;
+  left: 60px;
+}
+.inner-square1 {
+  width: 108px;
+  height: 108px;
+  transform: rotate(20deg);
+  background-color: #ebbd68;
+}
+
+.square2 {
+  width: 93px;
+  height: 93px;
+  position: absolute;
+  top: 175px;
+  left: 100px;
+}
+.inner-square2 {
+  width: 93px;
+  height: 93px;
+  transform: rotate(30deg);
+  background-color: #face7d;
+}
+
+.square3 {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 240px;
+  left: 200px;
+}
+.inner-square3 {
+  width: 65px;
+  height: 65px;
+  transform: rotate(100deg);
+  background-color: #ffe8bd;
+}
+
+.square4 {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 30px;
+  left: 240px;
+}
+.inner-square4 {
+  width: 56px;
+  height: 56px;
+  transform: rotate(250deg);
+  background-color: #f2cd88;
+}
+
+.square5 {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 65px;
+  left: 160px;
+}
+.inner-square5 {
+  width: 52px;
+  height: 52px;
+  transform: rotate(120deg);
+  background-color: #ffdb99;
+}
+/*squares' finish*/
+
 .secblock {
   height: 220px;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 .name {
@@ -160,10 +233,83 @@ hr {
 }
 
 /*third block*/
+/*squares*/
+.square21 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 70px;
+  right: 60px;
+}
+.inner-square21 {
+  width: 80px;
+  height: 80px;
+  transform: rotate(40deg);
+  background-color: #ebbd68;
+}
+
+.square22 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 120px;
+  right: 160px;
+}
+.inner-square22 {
+  width: 70px;
+  height: 70px;
+  transform: rotate(70deg);
+  background-color: #fad48e;
+}
+
+.square23 {
+  width: 67px;
+  height: 67px;
+  position: absolute;
+  top: 25px;
+  right: 65px;
+}
+.inner-square23 {
+  width: 67px;
+  height: 67px;
+  transform: rotate(160deg);
+  background-color: #f0d295;
+}
+
+.square24 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 140px;
+  right: 270px;
+}
+.inner-square24 {
+  width: 45px;
+  height: 45px;
+  transform: rotate(210deg);
+  background-color: #f7ddac;
+}
+
+.square25 {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -25px;
+  right: 120px;
+}
+.inner-square25 {
+  width: 35px;
+  height: 35px;
+  transform: rotate(145deg);
+  background-color: #f7ddac;
+}
+/*squares' finish*/
+
 .thirdblock {
   margin-top: 90px;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 .name-three {
   font-size: 20px;
@@ -240,6 +386,7 @@ hr {
   color: #000;
   font-size: 20px;
   font-weight: 400;
+  text-align: justify;
 }
 
 /*childhood*/
@@ -405,6 +552,7 @@ td {
   font-size: 20px;
   line-height: 1.55;
   font-weight: 400;
+  text-align: justify;
 }
 
 /*facts*/
@@ -512,7 +660,7 @@ td {
   border-top: 1px solid #eee;
 }
 
-.tab h1 {
+.tab h2 {
   color: #553831;
   text-align: left;
   font-size: 22px;
@@ -538,8 +686,8 @@ td {
   transition: max-height 0.35s;
 }
 
-.tab-content h2 {
-  font-size: 16px;
+.tab-content h3 {
+  font-size: 18px;
   font-weight: 300;
   color: #000;
   margin-bottom: 25px;
@@ -672,6 +820,61 @@ td {
 
 /*media*/
 /*laptop L*/
+@media screen and (min-width: 1305px) {
+/*squares*/
+.square1 {
+  top: 80px;
+  left: 230px;
+}
+
+.square2 {
+  top: 175px;
+  left: 270px;
+}
+
+.square3 {
+  top: 240px;
+  left: 370px;
+}
+
+.square4 {
+  top: 30px;
+  left: 410px;
+}
+
+.square5 {
+  top: 65px;
+  left: 330px;
+}
+/*squares' finish*/
+
+/*squares*/
+.square21 {
+  top: 70px;
+  right: 240px;
+}
+
+.square22 {
+  top: 120px;
+  right: 340px;
+}
+
+.square23 {
+  top: 25px;
+  right: 245px;
+}
+
+.square24 {
+  top: 140px;
+  right: 450px;
+}
+
+.square25 {
+  top: -25px;
+  right: 300px;
+}
+/*squares' finish*/
+}
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
   .childhood {
     margin-left: 11%;
