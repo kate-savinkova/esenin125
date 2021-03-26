@@ -367,8 +367,7 @@ hr {
 /*biography*/
 .biography-text {
   margin-top: 60px;
-  margin-bottom: 60px;
-  margin-left: 100px;
+  margin-left: 90px;
   margin-right: 60px;
 }
 .high {
@@ -392,14 +391,12 @@ hr {
 /*childhood*/
 .childhood {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 15%;
-  margin-right: 10%;
   margin-bottom: 60px;
 }
 
 .portrait {
+  margin-left: 40px;
   width: 290px;
   height: 290px;
   border-radius: 100%;
@@ -407,7 +404,8 @@ hr {
 }
 
 .p-childhood {
-  width: 700px;
+  width: auto;
+  padding-left: 40px;
 }
 
 .childhood .subtitle{
@@ -420,14 +418,12 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
   flex-direction: row;
   margin-bottom: 60px;
 }
 
 .p-biography {
-  width: 600px;
+  width: 800px;
 }
 
 .biography .subtitle {
@@ -436,37 +432,43 @@ hr {
 }
 
 .biography-imgs {
-  display: flex;
-  flex-direction: column;
-  width: 550px;
-  margin-left: 25px;
+  position: relative;
+  width: 600px;
+  margin-left: 60px;
+  height: 750px;
 }
 
 .biography2 {
   width: 300px;
-  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
-  align-self: flex-start;
-  margin-bottom: 10px;
+  box-shadow: -40px 10px 7px 7px rgb(199 186 163 / 20%);
+  position: absolute;
+  top: -10px;
+  left: 140px;
 }
 
 .biography3 {
   width: 210px;
-  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
-  margin-left: 60%;
-  margin-bottom: 10px;
+  height: 304px;
+  box-shadow: -40px 10px 7px 7px rgb(199 186 163 / 20%);
+  position: absolute;
+  top: 220px;
+  left: 0px;
 }
 
 .biography4 {
-  width: 190px;
-  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
-  margin-left: 5%;
-  margin-bottom: 10px;
+  height: 304px;
+  box-shadow: -40px 10px 7px 7px rgb(199 186 163 / 20%);
+  position: absolute;
+  top: 220px;
+  right: 0px;
 }
 
 .biography5 {
   width: 300px;
-  box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
-  align-self: flex-end;
+  box-shadow: -40px 10px 7px 7px rgb(199 186 163 / 20%);
+  position: absolute;
+  top: 560px;
+  left: 140px;
 }
 
 /*private-life*/
@@ -474,18 +476,18 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 13%;
-  margin-right: 10%;
   margin-bottom: 60px;
 }
 
 .love {
   width: 400px;
   box-shadow: -40px 20px 7px 7px rgb(199 186 163 / 20%);
+  margin-left: 40px;
 }
 
 .p-love {
-  width: 700px;
+  width: auto;
+  padding-left: 40px;
 }
 
 .private-life .subtitle {
@@ -498,9 +500,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 60px;
 }
 
 .last-portrait {
@@ -510,7 +509,8 @@ hr {
 }
 
 .p-death {
-  width: 700px;
+  width: auto;
+  padding-right: 40px;
 }
 
 .death .subtitle {
@@ -821,47 +821,46 @@ td {
 /*media*/
 /*laptop L*/
 @media screen and (min-width: 1305px) {
-/*squares*/
+/*squares1*/
 .square1 {
-  top: 80px;
-  left: 230px;
+  top: 100px;
+  left: 190px;
 }
 
 .square2 {
-  top: 175px;
-  left: 270px;
+  top: 190px;
+  left: 240px;
 }
 
 .square3 {
-  top: 240px;
-  left: 370px;
+  top: 260px;
+  left: 380px;
 }
 
 .square4 {
-  top: 30px;
-  left: 410px;
+  top: 25px;
+  left: 400px;
 }
 
 .square5 {
-  top: 65px;
-  left: 330px;
+  top: 40px;
+  left: 300px;
 }
-/*squares' finish*/
 
-/*squares*/
+/*squares2*/
 .square21 {
   top: 70px;
-  right: 240px;
+  right: 200px;
 }
 
 .square22 {
   top: 120px;
-  right: 340px;
+  right: 320px;
 }
 
 .square23 {
-  top: 25px;
-  right: 245px;
+  top: 10px;
+  right: 205px;
 }
 
 .square24 {
@@ -870,123 +869,53 @@ td {
 }
 
 .square25 {
-  top: -25px;
-  right: 300px;
+  top: -60px;
+  right: 280px;
 }
-/*squares' finish*/
 }
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
-  .childhood {
-    margin-left: 11%;
-    margin-right: 6%;
-  }
-  .most-of-biography {
-    margin-left: 8%;
-    margin-right: 6%;
-  }
-  .biography-imgs {
-    width: 600px;
-    margin-left: 25px;
-  }
-  .biography .subtitle {
-    margin-left: 8px;
-  }
-  .private-life {
-    margin-left: 11%;
-    margin-right: 8%;
-  }
-  .p-love {
-    padding-left: 70px;
-  }
-  .private-life .subtitle {
-    margin-left: 8px;
-  }
-  .death {
-    margin-left: 7%;
-    margin-right: 6%;
-  }
-  .p-death {
-    width: 700px;
-  }
-  .death .subtitle {
-    margin-left: 8px;
-  }
+  
 }
 /*laptop*/
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   /*biography*/
-  .childhood {
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-  .portrait {
-    width: 250px;
-    height: 250px;
-    box-shadow: -25px 10px 7px 7px rgb(217 211 200 / 20%);
-  }
-  .p-childhood {
-    padding-left: 40px;
-  }
-  .childhood .subtitle{
-    margin-left: 8px;
-  }
-  .most-of-biography {
-    margin-left: 4%;
-    margin-right: 10%;
+  .biography-text {
+    margin-left: 70px;
+    margin-right: 40px;
   }
   .biography-imgs {
-    width: 300px;
-    margin-left: 25px;
-  }
-  .biography .subtitle {
-    margin-left: 8px;
+    margin-left: 40px;
+    height: 910px;
   }
   .biography2 {
-    width: 260px;
-    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
-    margin-bottom: 50px;
+    width: 280px;
+    box-shadow: -20px 10px 7px 7px rgb(199 186 163 / 20%);
+    top: -10px;
+    left: 50px;
   }
   .biography3 {
-    width: 170px;
-    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
-    margin-bottom: 50px;
+    width: auto;
+    height: 254px;
+    box-shadow: -20px 10px 7px 7px rgb(199 186 163 / 20%);
+    position: absolute;
+    top: 194px;
+    left: 0px;
   }
+  
   .biography4 {
-    width: 160px;
-    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
-    margin-bottom: 50px;
+    height: 254px;
+    box-shadow: -20px 10px 7px 7px rgb(199 186 163 / 20%);
+    position: absolute;
+    top: 420px;
+    right: 0px;
   }
+  
   .biography5 {
-    width: 260px;
-    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
-  }
-  .private-life {
-    margin-left: 7%;
-    margin-right: 8%;
-  }
-  .love {
-    width: 350px;
-    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
-  }
-  .p-love {
-    padding-left: 50px;
-  }
-  .private-life .subtitle {
-    margin-left: 8px;
-  }
-  .death {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .last-portrait {
-    width: 260px;
-    box-shadow: -25px 10px 7px 7px rgb(199 186 163 / 20%);
-  }
-  .p-death {
-    width: 700px;
-  }
-  .death .subtitle {
-    margin-left: 8px;
+    width: 280px;
+    box-shadow: -20px 10px 7px 7px rgb(199 186 163 / 20%);
+    position: absolute;
+    top: 700px;
+    left: 50px;
   }
   /*table*/
   table {
